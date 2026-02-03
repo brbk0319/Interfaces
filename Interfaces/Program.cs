@@ -3,8 +3,9 @@
 
 IMovable player = new Player();
 IMovable enemy = new Enemy();
-IMovable nPC = new NPC();
+IMovable notPlayer = new NPC();
+
 
 player.Move();
 enemy.Move();
-nPC.Move();
+notPlayer.Move();
