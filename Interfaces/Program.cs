@@ -1,10 +1,17 @@
-﻿using Characters;
+﻿using Interfaces;
 
 
-IMovable player = new Player();
-IMovable enemy = new Enemy();
-IMovable notPlayer = new NPC();
+Player player = new Player();
+Enemy enemy = new Enemy();
+NPC npc = new NPC();
 
-player.Move();
-enemy.Move();
-notPlayer.Move();
+player.Introduce();
+enemy.Introduce();
+npc.Introduce();
+
+enemy.Attack();
+player.IsAttacked();
+npc.IsAttacked();
+player.Attack();
+npc.Attack();
+enemy.IsAttacked();
